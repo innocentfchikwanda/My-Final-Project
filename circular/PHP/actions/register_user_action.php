@@ -1,4 +1,7 @@
 <?php
+
+header('Access-Control-Allow-Origin: http://localhost:3000');
+
 include '../settings/connection.php';
 include '../functions/sanitize.php';
 
