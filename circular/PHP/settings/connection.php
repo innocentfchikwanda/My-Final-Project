@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$DATABASE = 'chore_mgt';
+$servername = "34.35.42.62";
+$username = "innocent";
+$password = "mysql.1223";
+$DATABASE = 'circulardb';
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $DATABASE);
@@ -11,4 +11,6 @@ $conn = new mysqli($servername, $username, $password, $DATABASE);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
+
+echo "connection suceeded";
 

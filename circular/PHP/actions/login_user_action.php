@@ -1,21 +1,5 @@
 <?php
 
-/*
-
-
-
-
-
-
-OIf no record found provide appropriate response (user not registered,incorrectusername or password, etc.)
-o If a record is found continue with the processing below
-Fetch the record.
-Verify password user provided against database record using the php method password_verify()
-If verification fails provide appropriate response (incorrect username or password, etc.)O
-o Ifit's a match, continue with the processing below.
-Create a session for user id and role id
-Redirect to home/dashboard page.*/
-
 //Start session using PHP session method.
 session_start();
 
