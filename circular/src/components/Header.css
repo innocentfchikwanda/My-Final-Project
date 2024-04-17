@@ -9,12 +9,6 @@
   z-index: 100;
 }
 
-.header__logo {
-  width: 100px;
-  object-fit: contain;
-  margin: 10px 10px 10px 10px;
-}
-
 .header__search {
   display: flex;
   flex: 1;
@@ -24,10 +18,9 @@
 }
 
 .header__searchInput {
-  height: 12px;
   padding: 10px;
   border: none;
-  height: 30px;
+  height: 40px;
   width: 500px !important;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -35,22 +28,30 @@
 
 .header__searchIcon {
   padding: 5px;
-  height: 40px !important;
+  height: 30px !important;
   background-color: #1cc640;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
-.header__optionLineOne {
-  font-size: 13px;
-}
-
-.header__optionLineTwo {
-  font-size: 13px;
-  font-weight: 600;
-}
-
 .logo {
   padding: 20px 20px 20px 20px;
   width: 300px;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #0397d2);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #02a7c8);
+}
+
+.header__logo {
+  width: 70px;
+  object-fit: contain;
+}
+
+.uploadButton {
+  width: 40px;
+  height: 40px;
 }
