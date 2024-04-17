@@ -33,10 +33,11 @@ function Register() {
               <h2 class="form-title">Sign up</h2>
 
               <form
-                action="../action/register_user_action.php"
                 method="POST"
                 class="register-form"
-                id="register-form"
+                id="login-form"
+                action="http://localhost:8000/actions/register_user_action.php"
+                name="register"
               >
                 <div class="form-group">
                   <label for="fname">
@@ -169,7 +170,7 @@ function Register() {
               <figure>
                 <img src={image} alt="sing up image" />
               </figure>
-              <a href="Login_view.php" class="signup-image-link">
+              <a href="http://localhost:5173/" class="signup-image-link">
                 I am already member
               </a>
             </div>

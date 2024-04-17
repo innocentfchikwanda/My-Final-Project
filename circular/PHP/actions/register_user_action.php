@@ -38,13 +38,13 @@ if (isset($_POST['signup'])) {
     if (count($error) == 0) {
 
         $hashed_pass = password_hash($pass, PASSWORD_DEFAULT);
-        $sql = "INSERT INTO people (rid, fid, fname, lname, gender, dob, tel, email, passwd) VALUES (3, 1, '$fname', '$lname', '$gender', '$dob', '$tel', '$email', '$hashed_pass')";
+        $sql = "INSERT INTO users (fname, lname, sex, dob, pnumber, email, pwd) VALUES ('$fname', '$lname', '$gender', '$dob', '$tel', '$email', '$hashed_pass')";
 
         if ($conn->query($sql) === TRUE) {
 
             //re-direct to Login_view.php
 
-            header("Location:../Login/Login_view.php");
+            header("Location:http://localhost:5173/home");
 
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;

@@ -44,7 +44,14 @@ function Login() {
 
               <div class="signin-form">
                 <h2 class="form-title">Sign in</h2>
-                <form method="POST" class="register-form" id="login-form">
+
+                <form
+                  method="POST"
+                  class="register-form"
+                  id="login-form"
+                  action="http://localhost:8000/server.php"
+                  name="login"
+                >
                   <div class="form-group">
                     <label for="your_name">
                       <i class="zmdi zmdi-account material-icons-name"></i>
