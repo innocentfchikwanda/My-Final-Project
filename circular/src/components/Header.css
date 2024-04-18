@@ -1,7 +1,9 @@
 .header {
+  z-index: 2147483647;
   height: 100px;
   width: 100vw !important;
   display: flex;
+  display: -webkit-flex;
   align-items: center;
   background-color: #131921;
   position: sticky !important;
@@ -52,6 +54,14 @@
 }
 
 .uploadButton {
+  right: 10%;
   width: 40px;
   height: 40px;
+}
+
+.ribbon {
+  z-index: 30 !important;
+  position: sticky !important;
+  color: rgb(198, 216, 216);
+  background-color: #17a636;
 }

@@ -148,7 +148,7 @@ function Register() {
                       <span></span>
                     </span>
                     I agree all statements in{" "}
-                    <a href="#" class="term-service">
+                    <a href="#" class="label-agree-term">
                       Terms of service
                     </a>
                   </label>

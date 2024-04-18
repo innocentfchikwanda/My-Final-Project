@@ -1,57 +1,80 @@
 import React from "react";
-import "./Header.css";
-import Product from "./Product";
+import "./Home.css";
+import Asset from "./Asset";
 import clothes from "../assets/clothes_2.webp";
 import suits from "../assets/suits.jpeg";
 import shoes from "../assets/shoes.jpeg";
+import novels from "../assets/novel_lotr.jpeg";
+import babygear from "../assets/baby_stroller.jpeg";
+import kitchenware from "../assets/kitchenware.jpeg";
+import gardentools from "../assets/garden_tools.jpeg";
 
 const Home = () => {
   return (
-    <div className="home">
-      <div className="home__container">
-        <Product
-          id="12321341"
-          title="Clothes"
-          price={11.96}
-          rating={5}
-          image={clothes}
-        />
+    <>
+      <div id="fullpage">
+        <div id="sidebar">
+          <a>circles</a>
+          <a>setting</a>
+        </div>
+        <div className="home">
+          <div className="home_container">
+            <Asset
+              id="23445930"
+              title="Baby Gear"
+              price={98.99}
+              rating={5}
+              image={babygear}
+            />
+            <Asset
+              id="3254354345"
+              title="Garden Tools"
+              price={598.99}
+              rating={4}
+              image={gardentools}
+            />
 
-        <Product id="49538094" title="Shoes" rating={4} image={shoes} />
+            <Asset
+              id="90829332"
+              title="Novels"
+              price={1}
+              rating={5}
+              image={novels}
+            />
+          </div>
 
-        <Product
-          id="4903850"
-          title="Suits"
-          price={199.99}
-          rating={3}
-          image={suits}
-        />
-        <Product
-          id="23445930"
-          title="Category"
-          price={98.99}
-          rating={5}
-          image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
-        />
-        <Product
-          id="3254354345"
-          title="Category"
-          price={598.99}
-          rating={4}
-          image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
-        />
+          <div className="home_container">
+            <Asset
+              id="12321341"
+              title="Clothes"
+              price={11.96}
+              rating={5}
+              image={clothes}
+            />
 
-        <Product
-          id="90829332"
-          title="Category"
-          price={1094.98}
-          rating={4}
-          image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
-        />
+            <Asset id="49538094" title="Shoes" rating={4} image={shoes} />
+
+            <Asset
+              id="4903850"
+              title="Suits"
+              price={199.99}
+              rating={3}
+              image={suits}
+            />
+          </div>
+
+          <div className="home_container">
+            <Asset
+              id="23445930"
+              title="Kitchen Ware"
+              price={98.99}
+              rating={5}
+              image={kitchenware}
+            />
+          </div>
+        </div>
       </div>
-
-      <div className="home__container"> </div>
-    </div>
+    </>
   );
 };
 

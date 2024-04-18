@@ -1,7 +1,14 @@
-import React from "react";
-import "./Product.css";
+import React, { useState } from "react";
+import "./Asset.css";
 
-function Product({ id, title, image, price, rating }) {
+function Asset({ id, title, image, price, rating }) {
+  const [asset, getAsset] = useState({});
+
+  /*const handleClick = () => {
+    getAsset(id);
+  };
+  */
+
   return (
     <div className="product">
       <div className="product__info">
@@ -21,9 +28,15 @@ function Product({ id, title, image, price, rating }) {
 
       <img src={image} alt="" />
 
-      <button>Cycle</button>
+      <button
+        type="button"
+        class="cycle-button"
+        onClick={(e) => handleClick(e)}
+      >
+        Cycle
+      </button>
     </div>
   );
 }
 
-export default Product;
+export default Asset;

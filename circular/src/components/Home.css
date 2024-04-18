@@ -1,0 +1,51 @@
+#fullpage {
+  z-index: 10;
+  position: absolute !important;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 20% 80%;
+  position: relative !important;
+  width: 100% !important;
+  height: 100vh !important;
+  background-color: #213547 !important;
+}
+
+#sidebar {
+  z-index: 20;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12pt !important;
+  background-color: #131921;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px !important;
+  height: auto !important;
+  display: flex;
+  color: rgb(20, 188, 68);
+  width: 150px !important;
+  position: sticky !important;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+}
+
+.home {
+  z-index: 10;
+  top: 50px !important;
+  position: relative !important;
+  align-items: center;
+  width: 80%;
+  right: 0;
+  width: auto !important;
+  height: auto !important;
+  background-color: #213547 !important;
+}
+
+.home_container {
+  z-index: 20;
+  position: relative !important;
+  width: 95%;
+  align-items: center;
+  background-color: #213547 !important;
+  display: flex !important;
+}

@@ -13,10 +13,13 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:8000/server.php", {
-        method: "POST",
-        body: new URLSearchParams({ name }), // Serialize form data
-      });
+      const response = await fetch(
+        "http://localhost:8000/actions/login_user_action.php",
+        {
+          method: "POST",
+          body: new URLSearchParams({ name }), // Serialize form data
+        }
+      );
       const data = await response.text();
       setResult(data);
     } catch (error) {
@@ -34,12 +37,7 @@ function Login() {
                 <figure>
                   <img src={logo} alt="sing up image" />
                 </figure>
-                <a
-                  href="http://localhost:5173/register"
-                  class="label-agree-term"
-                >
-                  Create an account
-                </a>
+                <a href="http://localhost:5173/register">Create an account</a>
               </div>
 
               <div class="signin-form">
@@ -49,7 +47,7 @@ function Login() {
                   method="POST"
                   class="register-form"
                   id="login-form"
-                  action="http://localhost:8000/server.php"
+                  action="http://localhost:8000/actions/login_user_action.php"
                   name="login"
                 >
                   <div class="form-group">
@@ -58,7 +56,7 @@ function Login() {
                     </label>
                     <input
                       type="text"
-                      name="your_name"
+                      name="email"
                       id="your_name"
                       placeholder="Your Name"
                     />
@@ -69,7 +67,7 @@ function Login() {
                     </label>
                     <input
                       type="password"
-                      name="your_pass"
+                      name="pass"
                       id="your_pass"
                       placeholder="Password"
                     />
@@ -91,15 +89,15 @@ function Login() {
                   <div class="form-group form-button">
                     <input
                       type="submit"
-                      name="signin"
+                      name="login"
                       id="signin"
                       class="form-submit"
-                      value="Log in"
+                      value="login"
                     />
                   </div>
                 </form>
                 <div class="social-login">
-                  <span class="social-label">Or login with</span>
+                  <span>Or login with</span>
                   <ul class="socials">
                     <li>
                       <a href="#">

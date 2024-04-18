@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Home from "./components/Home";
+import Ribbon from "./components/Ribbon";
 import Header from "./components/Header";
 import Login from "./components/Login";
 import Register from "./components/Register";
@@ -16,6 +17,7 @@ function App() {
             element={
               <>
                 <Header />
+                <Ribbon />
                 <Home />
               </>
             }
